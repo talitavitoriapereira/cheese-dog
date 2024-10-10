@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* configuraçao do grid */
+body{
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas:
+    "cabeca cabeca cabeca cabeca cabeca cabeca cabeca"
+    "corpo corpo corpo corpo corpo corpo corpo corpo corpo "
+    "rodape rodape rodape rodape rodape rodape rodape";
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto auto auto auto;
+    font-family:'Indie Flower',cursive;
+
+
+
+}
+@media only screen and ( max-width:400px){
+    body{
+        grid-template-areas: 
+        'cabeca'
+        'corpo'
+        'rodape';
+        grid-template-columns: auto;
+        grid-template-rows:  auto auto auto auto;
+
+    }
+
+}
+/* fim das configuraçoes do grid */
+
+header{
+    grid-area: cabeca;
+    background-color:lightsalmon;
+}
+
+main{
+    grid-area: corpo;
+
+}
+
+footer{
+    grid-area: rodape;
+   
+
+}
