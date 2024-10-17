@@ -42,6 +42,56 @@ header a{
 
 }
 
+section{
+    background-color: rgb(247, 247, 127);
+    border-radius: 8px;
+    margin: 7px;
+    text-align: center;
+
+
+}
+
+.calabresa{
+    background-color: bisque;
+    width: 400px;
+    height: 300px;
+    display: inline;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.calabresa a{
+   text-decoration: none;
+   background-color: aquamarine;
+   color: #31769e;
+   border-radius: 2px;
+   position: relative;
+   bottom: 300px;
+   left: 300px;
+   text-align: center;
+   padding:10px;
+}
+.calabresa img{
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(245, 217, 92);
+    position: relative;
+    right: 360px;
+}
+
+.link{
+    text-decoration: none;
+    background-color: aquamarine;
+    color: #31769e;
+    border-radius: 2px;
+    position: relative;
+    bottom: 100px;
+    left: 200px;
+    text-align: center;
+    padding:10px;
+}
+
 .logo{
     margin-top:-40px;
     width: 200px;

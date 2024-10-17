@@ -5,19 +5,16 @@ body{
     "cabeca cabeca cabeca "
     "corpo corpo corpo "
     "rodape rodape rodape";
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-row: auto auto auto;
-
-
-
-
+  
 
 }
 @media only screen and  (max-width:400px ){
     body{
      grid-template-areas: 
      "cabeca"
-     "principal"
+     "corpo"
      "rodape";
      grid-template-columns: auto;
      grid-template-rows: 300px auto auto;
@@ -26,53 +23,176 @@ body{
 
 header{
     grid-area: cabeca;
-    background-color: brown;
+    background-color: blue;
+
+}
+.logo{
+    position: relative;
+    left: 500px;
+    margin-top: -20px;
+    width: 200px;
+    height: 200px;
+    
 }
 
 main{
     grid-area: corpo;
     background-color: rgb(233, 166, 166);
 }
+section{
+    margin: 10px;
+}
+
+.salgado{
+ background-color: beige;
+
+}
+div img{
+    width: 200px;
+}
+.sal{
+    background-color: #31769e;
+    border-radius: 2px;
+    align-items: center;
+    display: block;
+    width: 200px;
+    flex-direction: column;
+
+
+}
+
+.doces{
+    background-color: beige;
+
+}
+
+.doce{
+    background-color: #31769e;
+    border-radius: 2px;
+    align-items: center;
+    display: block;
+    width: 200px;
+    flex-direction: column;
+}
 
 footer{
     grid-area: rodape;
-    background-color: rgb(204, 196, 126);
+    background-color:rgb(241, 217, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+
+}
+
+.ifood{
+    width: 100px;
+    height: auto;
+}
+
+.much{
+    width: 100px;
+    height: auto;
+}
+
+.rappi{
+    width: 100px;
+    height: auto;
+}
+
+/* configuraçao do menu */
+header{
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 0;
 }
 
 
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(206, 75, 0, 0.801);
+    width: 0px;
+    transition: all 0.8s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#000000;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 6px;
+
+}
+
+.botaoz{
+    display: none;
+    color: #72CBFF;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(116, 28, 28) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: white;
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #31769e;
+    text-shadow: 0 0 5px white;
+}
+
+
+.icon{
+    width: 70px;
+    margin-top: 20px;
+
+}
+/* final das configuracoes do menu */
 
 
 
 
 
 
-    
-    .salgado{
-        flex-direction: column;
-        border-radius: 10px;
-        width: 300px;
-        height: 450px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        margin:10px;
-        background-color: rgb(238, 216, 184);
-        justify-content: center;
-        transition: 1s;
-        box-shadow: 0px 10px 40px rgb(152, 219, 250);
-    }
-    .doces{
-        flex-direction: column;
-        border-radius: 10px;
-        width: 300px;
-        height: 450px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        margin:10px;
-        background-color: rgb(152, 219, 250);
-        justify-content: center;
-        transition: 1s;
-        box-shadow: 0px 10px 40px rgb(238, 216, 184);
-    }
-    
+
+
+  
