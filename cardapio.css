@@ -1,0 +1,78 @@
+/* configuraçao do grid */
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca cabeca "
+    "corpo corpo corpo "
+    "rodape rodape rodape";
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-row: auto auto auto;
+
+
+
+
+
+}
+@media only screen and  (max-width:400px ){
+    body{
+     grid-template-areas: 
+     "cabeca"
+     "principal"
+     "rodape";
+     grid-template-columns: auto;
+     grid-template-rows: 300px auto auto;
+      }
+    }
+
+header{
+    grid-area: cabeca;
+    background-color: brown;
+}
+
+main{
+    grid-area: corpo;
+    background-color: rgb(233, 166, 166);
+}
+
+footer{
+    grid-area: rodape;
+    background-color: rgb(204, 196, 126);
+}
+
+
+
+
+
+
+
+
+    
+    .salgado{
+        flex-direction: column;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin:10px;
+        background-color: rgb(238, 216, 184);
+        justify-content: center;
+        transition: 1s;
+        box-shadow: 0px 10px 40px rgb(152, 219, 250);
+    }
+    .doces{
+        flex-direction: column;
+        border-radius: 10px;
+        width: 300px;
+        height: 450px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin:10px;
+        background-color: rgb(152, 219, 250);
+        justify-content: center;
+        transition: 1s;
+        box-shadow: 0px 10px 40px rgb(238, 216, 184);
+    }
+    
