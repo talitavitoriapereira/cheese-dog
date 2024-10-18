@@ -28,85 +28,53 @@ body{
 /* fim das configuraçoes do grid */
 
 header{
+    
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);
     text-align: center;
     color: #e6eefa;
     font-size: xx-large;
-    margin-top: 40px;
-    height: 120px;
+    height: 200px;
     
 }
-header a{
-    text-decoration: none;
 
-}
 
 section{
-    background-color: rgb(247, 247, 127);
+    background-color: rgb(248, 248, 114);
     border-radius: 8px;
     margin: 7px;
     text-align: center;
+    padding: 8px;
 
-
-}
-
-.calabresa{
-    background-color: bisque;
-    width: 400px;
-    height: 300px;
-    display: inline;
-    flex-wrap: wrap;
-    text-align: center;
-
-}
-.calabresa a{
-   text-decoration: none;
-   background-color: aquamarine;
-   color: #31769e;
-   border-radius: 2px;
-   position: relative;
-   bottom: 300px;
-   left: 300px;
-   text-align: center;
-   padding:10px;
-}
-.calabresa img{
-    width: 200px;
-    height: auto;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgb(245, 217, 92);
-    position: relative;
-    right: 360px;
-}
-
-.link{
-    text-decoration: none;
-    background-color: aquamarine;
-    color: #31769e;
-    border-radius: 2px;
-    position: relative;
-    bottom: 100px;
-    left: 200px;
-    text-align: center;
-    padding:10px;
 }
 
 .logo{
     margin-top:-40px;
     width: 200px;
     height: 200px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 550px;
     
 }
+
 main{
     grid-area: corpo;
-    background-color: blanchedalmond;
+    background-color:#fa8459;
 
+}
+
+main h1{
+   text-align: center;
+   color: chocolate;
+   background-color: #f7c262;
+   
 }
 
 footer{
     grid-area: rodape;
-    background-color:rgb(241, 217, 0);
+    background-color:rgba(252, 161, 44, 0.966);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -120,6 +88,12 @@ footer{
 
     
    
+}
+footer a{
+    display: flex;
+    margin: 9px;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -139,88 +113,68 @@ footer{
     height: auto;
 }
 
-/* configuraçao do menu */
-header{
-    position: relative;
-}
-.menu{
-    position: absolute;
-    top: 0;
-}
-
-
-.menu nav{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px rgba(206, 75, 0, 0.801);
-    width: 0px;
-    transition: all 0.8s ease;
-    position: relative;
-    margin: 5px;
-}
-.menu li{
-    list-style: none;
-    color: #fffbfb;
-    padding: 10px;
-    text-align: center;
-    font-size: 23px;
-}
-.menu li a{
-    color:#000000;
+ header li {
     text-decoration: none;
+    margin-left: 9px;
+    padding: x;
+    display: inline;
+    position: relative;
+    right: 24px;
+    bottom: 50px;
+    flex-direction: row;
+    background-color: #f7c262;
+    box-shadow: 3px 1px 3px #5fc49d;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(139, 130, 253);
+  }
+
+  header a{
+    text-decoration: none;
+  }
+
+  /* carrossel de fotos */
+  body {
+    font-family: Arial, sans-serif;
 }
-.menu a span{
-    font-size: 0;
+
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
     display: block;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-}
-.menu label{
-    font-size: 28px;
-    padding-left: 6px;
-
 }
 
-.botaoz{
-    display: none;
-    color: #72CBFF;
-}
-.botaoz:checked+nav{
-    width: 200px;
-    border-radius: 5px;
-    padding: 0 20px;
-}
-
-.botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(116, 28, 28) ;
-    text-align: left;
-}
-
-.botaoz:checked+nav li:last-child{
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
     border: none;
+    cursor: pointer;
+    padding: 10px;
 }
 
-.botaoz:checked+nav a span{
-    font-size: 16px;
-    display: inline-block;
-    text-transform: uppercase;
-    padding-left: 10px;
+.prev {
+    left: 10px;
 }
 
-.fa-bars:hover{
-    color: white;
-    text-shadow: 1px 1px 8px #fcdbe4;
+.next {
+    right: 10px;
 }
-
-.menu li a:hover{
-    color: #31769e;
-    text-shadow: 0 0 5px white;
-}
-
-
-.icon{
-    width: 70px;
-    margin-top: 20px;
-
-}
-/* final das configuracoes do menu */
+/* fim carrossel */
