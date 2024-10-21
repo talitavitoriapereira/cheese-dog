@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheese Dog's- Cachorro Quente Gourmet</title> 
     <link rel="stylesheet" href="cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
@@ -28,13 +29,94 @@
         </nav>
     </header>
     <main>
-        <h1>sacola</h1>
+        <div class="page-title">Sua sacola</div>
+        <div class="content">
+            <section>
+               <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>
+                        <div class="produto">
+                            <img src="img/doritos.jpg" class="prod">
+                            <div class="info">
+                                <div class="name"></div>
+                                <div class="categoria"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$:22,99</td>
+                    <td>
+                    <div class="qty">
+                        <button><i class='bx bx-minus'></i></button>
+                        <span>2</span>
+                        <button><i class='bx bx-plus'></i></button>
+                    </div>
+                    </td>
+                    <td>R$:46,00</td>
+                    <td>
+                        <button class="delete"><i class='bx bx-x'></i></button>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="produto">
+                                <img src="img/tradicional.jpg" class="prod">
+                                <div class="info">
+                                    <div class="name"></div>
+                                    <div class="categoria"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$:30,90</td>
+                        <td>
+                        <div class="qty">
+                            <button><i class='bx bx-minus'></i></button>
+                            <span>1</span>
+                            <button><i class='bx bx-plus'></i></button>
+                        </div>
+                        </td>
+                        <td>R$:30,90</td>
+                        <td>
+                            <button class="delete"><i class='bx bx-x'></i></button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="produto">
+                                    <img src="img/simples.jpeg" class="prod">
+                                    <div class="info">
+                                        <div class="name"></div>
+                                        <div class="categoria"></div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>R$:15,00</td>
+                            <td>
+                            <div class="qty">
+                                <button><i class='bx bx-minus'></i></button>
+                                <span>2</span>
+                                <button><i class='bx bx-plus'></i></button>
+                            </div>
+                            </td>
+                            <td>R$:30,00</td>
+                            <td>
+                                <button class="delete"><i class='bx bx-x'></i></button>
+                            </td>
+                            </tr>
+                </tbody>
+               </table>
+            </section>
     </main>
         <footer>
     <div class="mainlog">
-        <div class="leftlog">
-            <h1>Frase aqui!</h1>
-        </div>
         <div class="rightlog">
             <div class="cardlog">
                 <h1>Registre-se no Cheese Dog's</h1>
@@ -42,11 +124,11 @@
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" placeholder="Digite seu nome">
                     <div class="textfield">
-                        <label for="email"> Endereço</label>
-                        <input type="text" name="endereco" placeholder=" endereço"> 
+                        <label for="end"> Endereço</label>
+                        <input type="text" name="endereco" placeholder="Digite seu endereço"> 
                 <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="text" name="senha" placeholder=""> 
+                    <label for="tel">Telefone</label>
+                    <input type="text" name="senha" placeholder="Seu telefone"> 
                 </div>
                     <a class="troca" href="login.html">Adicionar mais itens a sacola?</a>
                 <div>
