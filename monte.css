@@ -1,0 +1,108 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "cabeca cabeca cabeca "
+    "corpo corpo corpo "
+    "rodape rodape rodape";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-row: auto auto auto;
+  
+
+}
+@media only screen and  (max-width:400px ){
+    body{
+     grid-template-areas: 
+     "cabeca"
+     "corpo"
+     "rodape";
+     grid-template-columns: auto;
+     grid-template-rows: 300px auto auto;
+      }
+    }
+
+header{
+    grid-area: cabeca;
+    background-color: rgba(248, 162, 49, 0.966);
+    height: 200px;
+
+    }
+
+    header img{
+        height: 200px;
+       position: relative;
+       left: 800px;
+
+    }
+
+main{
+    grid-area: corpo;
+    background-color:  #fa8459;
+    text-align: center;
+    height: 500px;
+
+ }
+
+
+ main h1{
+    color: rgb(32, 30, 30);
+   border-style: dashed;
+   border-color: rgb(228, 159, 74);
+   background-color: rgb(238, 210, 168);
+   
+ }
+
+ main h2{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: rgb(233, 174, 102);
+    background-color: rgb(238, 210, 168);
+    width: 400px;
+    position: relative;
+    left: 40%;
+ }
+
+main a {
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    background-color:rgba(226, 132, 9, 0.966);
+    border-radius: 3px;
+    padding: 3px;
+    position: relative;
+    bottom: 6px;
+}
+
+
+footer{
+        grid-area: rodape;
+        background-color:rgba(252, 161, 44, 0.966);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        padding: 2px;
+        margin: 2px;
+        
+ }
+
+ .ifood{
+    width: 100px;
+    height: auto;
+}
+
+.much{
+    width: 100px;
+    height: auto;
+}
+
+.rappi{
+    width: 100px;
+    height: auto;
+}
+
+footer a{
+    display: flex;
+    margin: 9px;
+    flex-direction: column;
+    align-items: center;
+}
+
