@@ -1,0 +1,103 @@
+body{
+    display: grid;
+    grid-template-areas: "cabeca cabeca cabeca"
+    "corpo corpo corpo";
+    grid-template-columns: 1fr auto  ;
+    grid-row: auto auto ;
+    background-color: #fa8459;
+}
+
+@media only screen and (max-width: 400px){
+    body{
+        grid-template-areas: 
+        "cabeca"
+        "corpo";
+        grid-template-columns: auto;
+        grid-template-rows: 300px  auto;
+         }
+        .logotipo{
+            display:none;
+        }
+        
+}
+
+header li {
+    text-decoration: none;
+    margin-left: 9px;
+    padding: x;
+    display: inline;
+    position: relative;
+    right: 24px;
+    bottom: 50px;
+    flex-direction: row;
+    background-color: #f7c262;
+    box-shadow: 3px 1px 3px #5fc49d;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(139, 130, 253);
+  }
+
+  header a{
+    text-decoration: none;
+  }
+
+  header{
+    grid-area: cabeca;
+    background-color: rgba(248, 162, 49, 0.966);
+    width: auto;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    
+  }
+
+  header img{
+    width: 200px;
+    height: auto;
+    position: relative;
+    bottom: 50px;
+    margin-bottom: 0;
+    padding: -1;
+  }
+
+  main{
+    background-color: #fa8459;
+    align-items: center;
+    text-align: center;
+  }
+
+  main h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(1, 2, 2);
+    font-size: xx-large;
+    background-color: #f7c262;
+
+  }
+
+ div{
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #f8ba47;
+    margin: 10px;
+  }
+
+  div a{
+    text-decoration: none;
+    color: #0a6f88;
+    background-color: #ffe44e;
+    border-radius: 4px;
+  }
+
+  div button{
+    border-radius: 3px;
+    padding: 4px;
+    margin-top: 10px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5fc49d;
+
+  }
