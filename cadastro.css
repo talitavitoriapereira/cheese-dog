@@ -4,7 +4,7 @@ body{
     "corpo corpo corpo";
     grid-template-columns: 1fr auto  ;
     grid-row: auto auto ;
-    background-color: #fa8459;
+    background-color: #f7e3b2;
 }
 
 @media only screen and (max-width: 400px){
@@ -29,11 +29,11 @@ header li {
     right: 24px;
     bottom: 50px;
     flex-direction: row;
-    background-color: #f7c262;
-    box-shadow: 3px 1px 3px #5fc49d;
+    background-color: #f3e5b2;
+    box-shadow: 3px 1px 3px #cf9a6a;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(139, 130, 253);
+    color: #780000;
   }
 
   header a{
@@ -42,7 +42,7 @@ header li {
 
   header{
     grid-area: cabeca;
-    background-color: rgba(248, 162, 49, 0.966);
+    background-color: #e6a972;
     width: auto;
     height: 200px;
     align-items: center;
@@ -55,7 +55,7 @@ header li {
     width: 200px;
     height: auto;
     position: relative;
-    bottom: 50px;
+    bottom: 24px;
     margin-bottom: 0;
     padding: -1;
   }
@@ -80,14 +80,14 @@ header li {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: #f8ba47;
+    background-color:#eaa262;
     margin: 10px;
   }
 
   div a{
     text-decoration: none;
     color: #0a6f88;
-    background-color: #ffe44e;
+    background-color: #ff9c5b;
     border-radius: 4px;
   }
 
@@ -187,4 +187,8 @@ td{
 }
 .textfield > label{
   margin-bottom: 10px;
+}
+.btnlog{
+  background-color: #cf9a6a;
+  
 }
