@@ -36,7 +36,7 @@ header{
 
 main{
     grid-area: corpo;
-    background-color:  #fa8459;
+    background-color:  #ffe5b5;
     text-align: center;
     height: 500px;
 
@@ -46,16 +46,20 @@ main{
  main h1{
     color: rgb(32, 30, 30);
    border-style: dashed;
-   border-color: rgb(228, 159, 74);
-   background-color: rgb(238, 210, 168);
+   border-color: rgb(133, 11, 11);
+   width: 800px;
+   position: relative;
+   left: 30%;
+
+   /* background-color: rgb(209, 169, 109); */
    
  }
 
  main h2{
     border-style: dotted;
     border-width: 5px;
-    border-color: rgb(233, 174, 102);
-    background-color: rgb(238, 210, 168);
+    border-color: rgb(139, 21, 21);
+    /* background-color: rgb(238, 210, 168); */
     width: 400px;
     position: relative;
     left: 40%;

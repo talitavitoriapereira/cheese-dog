@@ -1,6 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-}
 
 /* configuraçao do grid */
 body{
@@ -30,15 +27,15 @@ body{
  }
 /* fim das configuraçoes do grid */
 
-/* inico configurcao do cabecalho */
 header{
+    
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);
     text-align: center;
     color: #e6eefa;
     font-size: xx-large;
     height: 200px;
-    position: relative;
+    
 }
 
 
@@ -59,9 +56,63 @@ section{
     justify-content: center;
     position: relative;
     left: 550px;
+    
 }
 
-/* 
+main{
+    grid-area: corpo;
+    background-color:#fa8459;
+
+}
+
+main h1{
+   text-align: center;
+   color: chocolate;
+   background-color: #f7c262;
+   
+}
+
+footer{
+    grid-area: rodape;
+    background-color:rgba(252, 161, 44, 0.966);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    
+    /* position: relative;
+    width: 100%;
+    bottom: 0; */
+
+    
+   
+}
+footer a{
+    display: flex;
+    margin: 9px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.ifood{
+    width: 100px;
+    height: auto;
+}
+
+.much{
+    width: 100px;
+    height: auto;
+}
+
+.rappi{
+    width: 100px;
+    height: auto;
+}
+
  header li {
     text-decoration: none;
     margin-left: 9px;
@@ -80,24 +131,13 @@ section{
 
   header a{
     text-decoration: none;
-  } */
-/* fim configurcao do cabecalho*/
+  }
 
-/* inico configurcao do corpo */
-main{
-    grid-area: corpo;
-    background-color:#fa8459;
-
+  /* carrossel de fotos */
+  body {
+    font-family: Arial, sans-serif;
 }
 
-main h1{
-   text-align: center;
-   color: chocolate;
-   background-color: #f7c262;
-   
-}
-
- /* carrossel de fotos */
 .carrossel {
     position: relative;
     max-width: 600px;
@@ -138,64 +178,16 @@ img {
     right: 10px;
 }
 /* fim carrossel */
-/* fim configurcao do corpo */
-
-/* inico configurcao do rodape */
-footer{
-    grid-area: rodape;
-    background-color:rgba(252, 161, 44, 0.966);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    padding: 2px;
-    margin: 2px;
-    
-    /* position: relative;
-    width: 100%;
-    bottom: 0; */
-}
-footer a{
-    display: flex;
-    margin: 9px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ifood{
-    /* width: 100px;CARDAPIO
-    MONTE SEU LANCHE
-    CADASTRO
-    DUVIDAS
-    sobre nós
-    Nossa equipe é composta por integrantes muito eficientes no trabalho, somos uma empresa criada através do PIAS (Projeto Integrado de Administração e Sistemas). Nossos lanches são preparados com muito cuidado e dedicação para que você possa ter uma experiência única saboreando os nossos Cachorros Quentes Gourmet. Nosso objetivo é fazer com que todos os nossos cliente possam sentir a qualidade do nosso produto e assim popularizar nosso estabelecimento.
-    nossos populares
-    ￼￼￼￼❮ */
-    height: auto;
-    width: 100px;
-}
-
-.much{
-    width: 100px;
-    height: auto;
-}
-
-.rappi{
-    width: 100px;
-    height: auto;
-}
-/* fim das configuracoes do rodape */
 
 /* configuraçao do menu */
 .menu nav{
     background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(15, 14, 87);
-    width: 0px;
-    transition: all 0.8s ease;
+    box-shadow: 2px 2px 5px rgb(236, 205, 104);
+    width: 50px;
+    transition: all 0.5s ease;
     position: relative;
     margin: 5px;
-    bottom: 450px;
 }
 .menu li{
     list-style: none;
@@ -205,7 +197,7 @@ footer a{
     font-size: 23px;
 }
 .menu li a{
-    color:#000000;
+    color:#72CBFF;
     text-decoration: none;
 }
 .menu a span{
@@ -215,10 +207,8 @@ footer a{
     transition: all 0.5s ease;
 }
 .menu label{
-    position: relative;
-    bottom: 10px;
     font-size: 28px;
-    padding-left: 6px;
+    padding-left: 16px;
 
 }
 
@@ -233,7 +223,7 @@ footer a{
 }
 
 .botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(30, 28, 116);
+    border-bottom: dashed 1px rgb(248, 233, 147) ;
     text-align: left;
 }
 
@@ -254,15 +244,7 @@ footer a{
 }
 
 .menu li a:hover{
-    color: #31769e;
+    color: #ff7cd8;
     text-shadow: 0 0 5px white;
-}
-
-
-.icon{
-    width: 50px;
-    position: relative;
-    bottom: 130px;
-    margin-bottom: 300px;
 }
 /* final das configuracoes do menu */
