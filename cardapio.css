@@ -24,16 +24,16 @@ body{
 header{
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);
-    
+    text-align: center;
 
 }
 .logo{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     justify-content: center;
     position: relative;
-    left: 800px;
+    left: 30px;
     
 }
 
@@ -77,6 +77,7 @@ section{
  background-color: rgba(248, 162, 49, 0);
 
 }
+
 div img{
     width: 100px;
 }
@@ -97,8 +98,51 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 4%;
+    left: 0.5%;
 
+}
+
+.bebidas{
+    flex-direction: column;
+    border-radius: 7px;
+    width: 400px;
+    height: 300px;
+    display:flexbox;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    padding-bottom: 1px;
+    background-color:  #ffe5b5;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+
+}
+
+.gua{
+    height: 100px;
+    width: auto;
+}
+
+.gua a{
+  position: relative;
+  bottom: 2px;
+}
+
+.bebidas input{
+    width: 100px;
+    position: relative;
+    bottom: 4px;
+}
+
+.kapo {
+    position: relative;
+    bottom:9px;
 }
 
 .doces{
@@ -124,8 +168,35 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 4%;
+    left: 0.5%;
 }
+
+  .batata{
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    background-color: #ffe5b5;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+}
+
+.sup{
+    position: relative;
+    bottom: 15px;
+}
+
+
 
 main a{
     background-color: rgba(248, 162, 49, 0.966);
@@ -184,9 +255,3 @@ header li {
 
 
 
-
-
-
-
-
-  
