@@ -27,7 +27,7 @@ body{
 header{
     grid-area: cabeca;
     background-color: rgba(248, 162, 49, 0.966);
-    height: 200px;
+    height: 100px;
 
     }
 
@@ -42,7 +42,7 @@ main{
     grid-area: corpo;
     background-color:  #ffe5b5;
     text-align: center;
-    height: 500px;
+    height: 1000px;
 
  }
 
@@ -50,7 +50,7 @@ main{
  main h1{
     color: rgb(32, 30, 30);
    border-style: dashed;
-   border-color: rgb(133, 11, 11);
+   border-color: rgb(23, 11, 133);
    width: 800px;
    position: relative;
    left: 30%;
@@ -62,23 +62,192 @@ main{
  main h2{
     border-style: dotted;
     border-width: 5px;
-    border-color: rgb(139, 21, 21);
+    border-color: rgb(23, 21, 139);
     /* background-color: rgb(238, 210, 168); */
     width: 400px;
     position: relative;
     left: 40%;
  }
 
-main a {
-    text-decoration: none;
-    color: rgb(5, 5, 5);
-    background-color:rgba(226, 132, 9, 0.966);
-    border-radius: 3px;
-    padding: 3px;
+ /* inicio botão animado */
+.container{
+    position:relative;
+    width:400px;
+    height:400px;
+    background:white;
+    margin: auto;
+    padding-top:300px;
+    padding-left: 120px;  
+  }
+  
+  .button {
+    color: #0e0808;
+    background: #fcf80b;
+    border-radius: 50px;
+    border: none;
+    transition: .5s ease;
+    box-shadow: 0 15px 60px -5px rgba(0, 0, 0, .5);
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    bottom: 6px;
+    top: 6px;
+    font-size: large;
+  
+  }
+  
+  
+  
+  .button:hover {
+    box-shadow: none;
+    cursor: pointer;
+  }
+  
+  .button:hover + .drip-1{
+    height: 50px;
+  }
+  
+  .button:hover ~ .drip-2{
+    height: 50px;
+  }
+  
+  .button:hover ~ .drip-3{
+    height: 50px;
+  }
+  
+  
+  
+  .drip-1{
+    position:absolute;
+    left: 1009px;
+    width:3px;
+    height:1px;
+    border-radius:0 0 21px 21px;
+    background:#fcf80b;
+    margin: 0px 220px;
+    transition: height 0.9s ease;
+  }
+  
+  
+  .drip-2{
+    position:absolute;
+    left: 800px;
+    width:2px;
+    height:0px;
+    border-radius:0 0 21px 21px;
+    background:#fcf80b;
+    margin: 0px 200px;
+    transition: height 1.5s ease;
+  }
+  
+  .drip-3{
+    position:absolute;
+    left: 1010px;
+    width:7px;
+    height:0px;
+    border-radius:0 0 21px 21px;
+    background:#fcf80b;
+    margin: 0px 230px;
+    transition: height .7s ease;
+  }
+  /* fim botão animado */  
+
+/* inicio alterações div */
+div img{
+    width: 100px;
+}
+/*  inicio sections */
+.comple {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    margin: 3px;
+    background-color: rgb(252, 194, 87);
 }
 
+.cheese{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    margin: 3px;
+    background-color: rgb(252, 194, 87);
+}
+
+.bread{
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    margin: 3px;
+    background-color: rgb(252, 194, 87);
+}
+/* fim sections */
+
+.pao{
+
+    width: 250px;
+    flex-direction: row;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    justify-content:center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+    background-color: beige;
+
+}
+
+.Queijo{
+    width: 250px;
+    flex-direction: row;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+    background-color: beige;
+}
+
+.comp{
+    width: 250px;
+    flex-direction: row;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+    background-color: beige;
+}
+/* fim configurações */
 
 footer{
         grid-area: rodape;
@@ -89,6 +258,8 @@ footer{
         text-align: center;
         padding: 2px;
         margin: 2px;
+        height: auto;
+
         
  }
 
@@ -108,9 +279,12 @@ footer{
 }
 
 footer a{
-    display: flex;
+    display: inline;
     margin: 9px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+   
+
 }
 
