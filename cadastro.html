@@ -22,7 +22,7 @@
                     <a href="cadastro.html">sacola</a>
                 </li>
                 <li>
-                    <a href="main.html">sobre nós</a>
+                    <a href="monte.html">personalize</a>
                 </li>
                 
             </ul>
@@ -54,11 +54,13 @@
                     </td>
                     <td>R$:22,99</td>
                     <td>
-                    <div class="qty">
-                        <button><i class='bx bx-minus'></i></button>
-                        <span>2</span>
-                        <button><i class='bx bx-plus'></i></button>
-                    </div>
+                        <div data-app="product.quantity" id="quantidade">
+                            <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                            <label>Quantidade:</label>      
+                            <input type="button" id="plus" value='-' onclick="process(-1)" />
+                            <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                            <input type="button" id="minus" value='+' onclick="process(1)">
+                        </div>
                     </td>
                     <td>R$:46,00</td>
                     <td>
@@ -77,10 +79,13 @@
                         </td>
                         <td>R$:30,90</td>
                         <td>
-                        <div class="qty">
-                            <button><i class='bx bx-minus'></i></button>
-                            <span>1</span>
-                            <button><i class='bx bx-plus'></i></button>
+                            <div data-app="product.quantity" id="quantidade">
+                                <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                                <label>Quantidade:</label>      
+                                <input type="button" id="plus" value='-' onclick="process(-1)" />
+                                <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                                <input type="button" id="minus" value='+' onclick="process(1)">
+                            
                         </div>
                         </td>
                         <td>R$:30,90</td>
@@ -100,10 +105,14 @@
                             </td>
                             <td>R$:15,00</td>
                             <td>
-                            <div class="qty">
-                                <button><i class='bx bx-minus'></i></button>
-                                <span>2</span>
-                                <button><i class='bx bx-plus'></i></button>
+
+                                    <div data-app="product.quantity" id="quantidade">
+                                      <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+                                      <label>Quantidade:</label>      
+                                      <input type="button" id="plus" value='-' onclick="process(-1)" />
+                                      <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+                                      <input type="button" id="minus" value='+' onclick="process(1)">
+                                    </div>
                             </div>
                             </td>
                             <td>R$:30,00</td>
@@ -130,12 +139,12 @@
                     <label for="tel">Telefone</label>
                     <input type="text" name="senha" placeholder="Seu telefone"> 
                     <div >
-                        <button class="button">Button</button>
+                        <button class="button"  ><a href="index.html"><strong>finalizar pedido</strong></a></button>
                         <div class="drip-1"></div>
                         <div class="drip-2"></div>
                         <div class="drip-3"></div>
                       </div>
-    </div>
+             </div>
                 </div>
             </div>
         </div>
