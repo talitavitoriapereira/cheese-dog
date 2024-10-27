@@ -9,16 +9,20 @@ body{
   
 
 }
-@media only screen and  (max-width:400px ){
-    body{
-     grid-template-areas: 
-     "cabeca"
-     "corpo"
-     "rodape";
-     grid-template-columns: auto;
-     grid-template-rows: 300px auto auto;
-      }
+@media only screen and (max-device-width: 400px) {
+    .menu { width:100%; }
+   body{
+    grid-template-areas: 
+    "cabeca"
+    "principal"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 200px  auto;
+     }
+    .logo{
+        display: none;
     }
+}
 
 header{
     grid-area: cabeca;

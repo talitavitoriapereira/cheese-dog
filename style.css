@@ -10,17 +10,19 @@ body{
     grid-row: auto auto auto;
 
 }
-@media only screen and  (max-width:400px ){
+
+ @media only screen and (max-device-width: 400px) {
+     .menu { width:100%; }
     body{
      grid-template-areas: 
      "cabeca"
      "principal"
      "rodape";
      grid-template-columns: auto;
-     grid-template-rows: 300px auto auto;
+     grid-template-rows: 200px auto auto;
       }
-     .logotipo{
-         display:none;
+     .logo{
+         display: flex;
      }
      
  
@@ -38,9 +40,7 @@ header{
     
 }
 
-.nav header{
 
-}
 
 
 section{
@@ -49,6 +49,7 @@ section{
     margin: 7px;
     text-align: center;
     padding: 8px;
+    display: flexbox;
 
 }
 
@@ -60,6 +61,7 @@ section{
     justify-content: center;
     position: relative;
     left: 550px;
+    display: flex;
     
 }
 

@@ -7,19 +7,21 @@ body{
     background-color: #fa8459;
 }
 
-@media only screen and (max-width: 400px){
-    body{
-        grid-template-areas: 
-        "cabeca"
-        "corpo";
-        grid-template-columns: auto;
-        grid-template-rows: 300px  auto;
-         }
-        .logotipo{
-            display:none;
-        }
-        
+@media only screen and (max-device-width: 400px) {
+  .menu { width:100%; }
+ body{
+  grid-template-areas: 
+  "cabeca"
+  "principal"
+  "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 200px auto auto;
+   }
+  .logo{
+      display: none;
+  }
 }
+
 header li {
     text-decoration: none;
     margin-left: 9px;
