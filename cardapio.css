@@ -29,6 +29,7 @@ header{
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);
     text-align: center;
+    position: relative;
 
 }
 .logo{
@@ -47,13 +48,22 @@ main{
     margin-top: 5px;
     text-align: center;
     align-items: center;
+
+    background: url("img/fundotijolinho") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 } 
+
+/* .fundo{
+    background-color: rgba(250, 235, 215, 0.521);
+} */
 
 h1 {
     text-align: center;
     align-items: center;
     /* margin-right: 40px ; */
-    background-color:rgba(247, 140, 0, 0.671) ;
+    background-color:rgba(247, 140, 0, 0.445) ;
 }
 
 h2{
@@ -74,12 +84,14 @@ section{
     flex-direction: row;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    background-color: rgba(241, 137, 0, 0.356);
 }
 
 .salgado{
- background-color: rgba(248, 162, 49, 0);
-
+    width: 100%;
+    background-color: rgba(255, 236, 129, 0.384);
+    margin-right: 10px;
 }
 
 div img{
@@ -236,20 +248,26 @@ footer{
 }
 
 /* configuraçao do menu */
+.menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffe5b5;
+}
+
 header li {
     text-decoration: none;
     margin-left: 9px;
     padding: x;
     display: inline;
     position: relative;
-    right: 24px;
-    bottom: 50px;
     flex-direction: row;
     background-color: #f7c262;
-    box-shadow: 3px 1px 3px #5fc49d;
+    box-shadow: 3px 1px 3px #a571029c;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(139, 130, 253);
+    margin: 0 10px 0 10px;
   }
 
   header a{
