@@ -100,16 +100,24 @@
       </div>
   
     </section>
-      <h2>Salsichas</h2>
+    <h2>Salsichas</h2>
+    <section class="sicha">
+      
     <div class="salsi">
       <h3>Salsicha Tradicional</h3>
       <img src="img/ingredientes/sasicha3.png" alt="salsicha">
       <input type="checkbox" >
+      <div data-app="product.quantity" id="quantidade">
+        <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
+             
+       
+      </div>
     </div>
     <div class="salsi">
       <h3>Salsicha de frango</h3>
       <img src="img/ingredientes/sasicha2.png" alt="salsicha">
       <input type="checkbox" >
+
     </div>
     <div class="salsi">
       <h3>Salsicha Tradicional</h3>
@@ -117,6 +125,11 @@
       <input type="checkbox" >
     </div>
   </section>
+  <label>Quantidade:</label>      
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
     <div >
         <button class="button"  ><a href="index.html"><strong>finalizar pedido</strong></a></button>
         <div class="drip-1"></div>
