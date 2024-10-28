@@ -32,16 +32,13 @@ body{
 header{
     
     grid-area: cabeca;
-    background-color:rgba(248, 162, 49, 0.966);
+    background-color:rgba(39, 131, 206, 0.966);
     text-align: center;
     color: #e6eefa;
     font-size: xx-large;
     height: 200px;
     
 }
-
-
-
 
 section{
     background-color: rgb(248, 248, 114);
@@ -52,17 +49,15 @@ section{
     display: flexbox;
 
 }
-
 .logo{
-    margin-top:-40px;
-    width: 200px;
-    height: 200px;
+    width: 190px;
     text-align: center;
-    justify-content: center;
-    position: relative;
-    left: 550px;
-    display: flex;
     
+}
+.logodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 main{
@@ -105,42 +100,42 @@ footer a{
 
 
 .ifood{
-    width: 100px;
+    width: 95px;
     height: auto;
 }
 
 .much{
-    width: 100px;
+    width: 95px;
     height: auto;
 }
 
 .rappi{
-    width: 100px;
+    width: 95px;
     height: auto;
 }
 
- header li {
+header li {
     text-decoration: none;
-    margin-left: 9px;
+    margin-left: 3%;
     padding: x;
     display: inline;
     position: relative;
-    right: 24px;
-    bottom: 50px;
     flex-direction: row;
-    background-color: #f7c262;
-    box-shadow: 3px 1px 3px #5fc49d;
+    /*background-color: #f7c262;
+    box-shadow: 3px 1px 3px #5fc49d;*/
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(139, 130, 253);
+    margin: 0 10px 0 10px;
   }
 
-  header a{
+header a{
     text-decoration: none;
+    color: rgb(61, 27, 11);
+    font-size: 20px;
   }
 
   /* carrossel de fotos */
-  body {
+body {
     font-family: Arial, sans-serif;
 }
 
