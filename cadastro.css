@@ -1,7 +1,8 @@
 body{
     display: grid;
     grid-template-areas: "cabeca cabeca cabeca"
-    "corpo corpo corpo";
+    "corpo corpo corpo"
+    "rodape rodape rodape";
     grid-template-columns: 1fr auto  ;
     grid-row: auto auto ;
   
@@ -11,7 +12,7 @@ body{
  body{
   grid-template-areas: 
   "cabeca"
-  "principal"
+  "corpo"
   "rodape";
   grid-template-columns: auto;
   grid-template-rows: 200px auto auto;
@@ -81,10 +82,9 @@ body{
   }
 
   main{
-    background-color: #fa8459;
+    grid-area: corpo ;
     align-items: center;
     text-align: center;
-
     background: url("img/fundotijolinho") center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -99,13 +99,13 @@ body{
 
   }
 
- div{
+ .content{
     padding: 2px;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: #f8ba47;
+    background-color: rgba(255, 236, 129, 0.384);
     margin: 10px;
   }
 
@@ -125,6 +125,18 @@ body{
     background-color: #5fc49d;
 
   }
+  .h2{
+    border-style: dotted;
+    border-width: 4px;
+    border-color: rgb(148, 5, 5);
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    left: 41%;
+    height: 20px;
+}
   .prod{
     width: 170px;
     border-radius: 5px;
@@ -151,8 +163,10 @@ body{
   text-align: center;
 }
 .content{
-  display: flex;
+  display: flex ;
   padding: 50px;
+  justify-content: center;
+  align-items: center;
 }
 section{
   flex: 1;
@@ -302,3 +316,39 @@ td{
 }
 }
 /* fim botão animado */
+footer{
+  grid-area: rodape;
+  background-color:rgba(252, 161, 44, 0.966);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+footer a{
+  display: flex;
+  margin: 9px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.ifood{
+  width: 95px;
+  height: auto;
+}
+
+.much{
+  width: 95px;
+  height: auto;
+}
+
+.rappi{
+  width: 95px;
+  height: auto;
+}
+.mainglog{
+  border-radius:0 0 21px 21px;
+}
