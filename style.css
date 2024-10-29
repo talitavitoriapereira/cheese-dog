@@ -29,21 +29,57 @@ body{
  }
 /* fim das configuraçoes do grid */
 
+body {
+    font-family: Arial, sans-serif;
+}
+
 header{
-    
-    grid-area: cabeca;
+     /* grid-area: cabeca;
     background-color:rgba(39, 131, 206, 0.966);
     text-align: center;
     color: #e6eefa;
     font-size: xx-large;
-    height: 200px;
-    
+    height: 200px; */
+
+    grid-area: cabeca;
+    background-color:rgba(248, 162, 49, 0.966);
+    text-align: center;
+    position: relative;
+ 
 }
 
+/* configuraçao do menu */
+.menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffe5b5;
+}
+
+header li {
+    text-decoration: none;
+    margin-left: 9px;
+    padding: x;
+    display: inline;
+    position: relative;
+    flex-direction: row;
+    background-color: #f7c262;
+    box-shadow: 3px 1px 3px #a571029c;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(139, 130, 253);
+    margin: 0 10px 0 10px;
+  }
+
+  header a{
+    text-decoration: none;
+  }
+/* final das configuracoes do menu */
+
 section{
-    background-color: rgb(248, 248, 114);
+    background-color: #ffe5b5e5;
     border-radius: 8px;
-    margin: 7px;
+    /* margin: 7px; */
     text-align: center;
     padding: 8px;
     display: flexbox;
@@ -63,13 +99,22 @@ section{
 main{
     grid-area: corpo;
     background-color:#fa8459;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+
+
+    background: url("img/fundotijolinho") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 
 }
 
 main h1{
    text-align: center;
-   color: chocolate;
-   background-color: #f7c262;
+   /* color:  rgb(255, 229, 210);
+   background-color: #c25700f8; */
    
 }
 
@@ -114,41 +159,20 @@ footer a{
     height: auto;
 }
 
-header li {
-    text-decoration: none;
-    margin-left: 3%;
-    padding: x;
-    display: inline;
-    position: relative;
-    flex-direction: row;
-    /*background-color: #f7c262;
-    box-shadow: 3px 1px 3px #5fc49d;*/
-    font-size: x-large;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 10px 0 10px;
-  }
 
-header a{
-    text-decoration: none;
-    color: rgb(61, 27, 11);
-    font-size: 20px;
-  }
-
-  /* carrossel de fotos */
-body {
-    font-family: Arial, sans-serif;
-}
 
 .carrossel {
     position: relative;
     max-width: 600px;
     margin: auto;
     overflow: hidden;
+    border: solid 25px  rgba(250, 249, 244, 0.767);
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease;
+ 
 }
 
 .slide {
@@ -159,6 +183,7 @@ body {
 img {
     width: 100%;
     display: block;
+   
 }
 
 .prev, .next {
@@ -180,72 +205,4 @@ img {
 }
 /* fim carrossel */
 
-/* configuraçao do menu */
-.menu nav{
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px rgb(236, 205, 104);
-    width: 50px;
-    transition: all 0.5s ease;
-    position: relative;
-    margin: 5px;
-}
-.menu li{
-    list-style: none;
-    color: #fffbfb;
-    padding: 10px;
-    text-align: center;
-    font-size: 23px;
-}
-.menu li a{
-    color:#72CBFF;
-    text-decoration: none;
-}
-.menu a span{
-    font-size: 0;
-    display: block;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-}
-.menu label{
-    font-size: 28px;
-    padding-left: 16px;
 
-}
-
-.botaoz{
-    display: none;
-    color: #72CBFF;
-}
-.botaoz:checked+nav{
-    width: 200px;
-    border-radius: 5px;
-    padding: 0 20px;
-}
-
-.botaoz:checked+nav li{
-    border-bottom: dashed 1px rgb(248, 233, 147) ;
-    text-align: left;
-}
-
-.botaoz:checked+nav li:last-child{
-    border: none;
-}
-
-.botaoz:checked+nav a span{
-    font-size: 16px;
-    display: inline-block;
-    text-transform: uppercase;
-    padding-left: 10px;
-}
-
-.fa-bars:hover{
-    color: white;
-    text-shadow: 1px 1px 8px #fcdbe4;
-}
-
-.menu li a:hover{
-    color: #ff7cd8;
-    text-shadow: 0 0 5px white;
-}
-/* final das configuracoes do menu */
