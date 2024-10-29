@@ -4,8 +4,7 @@ body{
     "corpo corpo corpo";
     grid-template-columns: 1fr auto  ;
     grid-row: auto auto ;
-    background-color: #fa8459;
-}
+  
 
 @media only screen and (max-device-width: 400px) {
   .menu { width:100%; }
@@ -22,27 +21,26 @@ body{
   }
 }
 
-header li {
+  header li {
     text-decoration: none;
     margin-left: 9px;
     padding: x;
     display: inline;
     position: relative;
-    right: 24px;
-    bottom: 50px;
     flex-direction: row;
     background-color: #f7c262;
-    box-shadow: 3px 1px 3px #5fc49d;
+    box-shadow: 3px 1px 3px #a571029c;
     font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(139, 130, 253);
+    margin: 0 10px 0 10px;
   }
 
   header a{
     text-decoration: none;
   }
 
-  header{
+  /* header{
     grid-area: cabeca;
     background-color: rgba(248, 162, 49, 0.966);
     width: auto;
@@ -50,8 +48,28 @@ header li {
     align-items: center;
     text-align: center;
     margin: 10px;
-    
+  } */
+  header{
+    grid-area: cabeca;
+    background-color:rgba(248, 162, 49, 0.966);
+    text-align: center;
+    position: relative;
   }
+  .logo{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    left: 30px;  
+  }
+
+  .menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffe5b5;
+}
 
   header img{
     width: 200px;
@@ -66,6 +84,11 @@ header li {
     background-color: #fa8459;
     align-items: center;
     text-align: center;
+
+    background: url("img/fundotijolinho") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
   }
 
   main h1{
@@ -276,5 +299,6 @@ td{
   background:#fcf80b;
   margin: 0px 230px;
   transition: height .7s ease;
+}
 }
 /* fim botão animado */
