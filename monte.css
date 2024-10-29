@@ -35,6 +35,7 @@ header{
         height: 200px;
        position: relative;
        left: 800px;
+       bottom: 60px;
 
     }
 
@@ -43,6 +44,7 @@ main{
     background-color:  #ffe5b5;
     text-align: center;
     height: 1000px;
+    align-items: center;
 
  }
 
@@ -54,6 +56,7 @@ main{
    width: 800px;
    position: relative;
    left: 30%;
+   bottom: 10px;
 
    /* background-color: rgb(209, 169, 109); */
    
@@ -61,6 +64,7 @@ main{
 
  main h2{
     text-align: center;
+    margin: 3px;
  }
 
  /* inicio botão animado */
@@ -114,8 +118,8 @@ main{
   
   .drip-1{
     position:relative;
-    right: 370px;
-    /* top: 10px; */
+    left: 370px;
+     top: 200px; 
     width:6px;
     height:1px;
     border-radius:0 0 21px 21px;
@@ -127,8 +131,8 @@ main{
   
   .drip-2{
     position:relative;
-    right: 360px;
-    /* top: 10px; */
+    left: 380px;
+    top: 100px; 
     width:5px;
     height:0px;
     border-radius:0 0 21px 21px;
@@ -206,14 +210,15 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 0.5%;
+    left: 10%;
     background-color: beige;
 
 }
 
 .Queijo{
-    width: 250px;
-    flex-direction: row;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
     border-radius: 10px;
     display: flex;
     text-align: center;
@@ -226,7 +231,7 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 0.5%;
+    left: 30%;
     background-color: beige;
 }
 
@@ -250,13 +255,13 @@ div img{
 }
 
 .salsi{
-    width: 290px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     text-align: center;
     align-items: center;
-    margin:15px;
-    flex-direction: row;
+    margin:10px;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     transition: 1s;
@@ -265,9 +270,28 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left :200px;
+    left: 30%;
+    top: 10px;
     background-color: beige;
 
+}
+
+.check{
+  position: relative;
+  top: 8px;
+}
+
+.cont{
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 12px;
+}
+
+.quan{
+  position: relative;
+  bottom: 10px;
 }
 /* fim configurações */
 

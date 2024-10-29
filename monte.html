@@ -17,119 +17,168 @@
     <div class="pao">
         <h3>Pão vegano</h3>
     <img src="img/ingredientes/pao1.png" alt="pao">
+    <strong><p>R$3,00</p></strong>
     </div>
     <input type="radio" id="pa">
     <div class="pao">
           <h3>Pão Tradicional</h3>
           <img src="img/ingredientes/pao2.png" alt="pao">
+        
         </div>
         <input type="radio" id="pa">
         <div class="pao">
           <h3>Pão de 1000 grãos </h3>
           <img src="img/ingredientes/pao3.png" alt="pao">
+          
   
         </div>
         <input type="radio" id="pa">
         <div class="pao">
           <h3>Pão Baguete</h3>
-           <img src="img/ingredientes/pao4.png" alt="pao">
+           <img src="img/ingredientes/pao4.png" alt="pao"> 
+           
         </div>
         <input type="radio" id="pa">
         <div class="pao">
             <h3>Pão de Gergilim</h3>
             <img src="img/ingredientes/pao5.png" alt="pao">
+           
         </div>
         <input type="radio" id="pa">
     </section>
     <h2>Queijos</h2>
     <section class="cheese">                
     <div class="Queijo" id="que">
+      <input type="checkbox" class="check"  >
         <h3>Queijo Cheddar</h3>
         <img src="img/ingredientes/cheddar.png" alt="queijos">
-        <input type="checkbox"  >
+        <label  class="quan">Quantidade:</label>  
+          <div class="cont" >     
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
+        </div>
+      </div>
     </div>
     <div class="Queijo">
+      <input type="checkbox" class="check" >
         <h3>Queijo Mussarela</h3>
         <img src="img/ingredientes/mussarela.png" alt="queijos">
-        <input type="checkbox" id="que">
+       
+        <label>Quantidade:</label>   
+        <div  >   
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
+        </div>
     </div>
     <div class="Queijo">
+      <input type="checkbox"  >
         <h3> Queijo prato</h3>
         <img src="img/ingredientes/prata.png" alt="queijos">
-        <input type="checkbox" id="que">
+      
+        <label>Quantidade:</label>  
+        <div  >     
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
+        </div>
     </div>
     </section>
     <h2>complementos</h2>
     <section class="comple">
   
     <div class="comp">
+      <input type="checkbox" >
         <h3>Ervilha</h3>
       <img src="img/ingredientes/ervilha.png" alt="complemento">
-      <input type="checkbox" id="compl">
+      
+      
     </div>
     <div class="comp">
+      <input type="checkbox" >
         <h3>Pure de Batata</h3>
         <img src="img/ingredientes/pure.png" alt="complemento">
-        <input type="checkbox" id="compl">
-      </div>
-      <div class="comp">
-        <h3>Milho</h3>
-        <img src="img/ingredientes/milho.png" alt="complemento">
-        <input type="checkbox" id="compl">
+        <input type="checkbox" >
        
       </div>
       <div class="comp">
+        <input type="checkbox" >
+        <h3>Milho</h3>
+        <img src="img/ingredientes/milho.png" alt="complemento">
+        
+        
+      </div>
+      <div class="comp">
+        <input type="checkbox" >
         <h3>Batata Palha</h3>
         <img src="img/ingredientes/batatapalha.png" alt="complemento">
-        <input type="checkbox" id="compl">
+        
       </div>
       <div class="comp">
+        <input type="checkbox" >
         <h3>Queijo Mussarela Ralado</h3>
         <img src="img/ingredientes/ralado.png" alt="complemento">
-        <input type="checkbox" id="compl">
+       
+        
       </div>
       <div class="comp">
+        <input type="checkbox" >
         <h3>Vinagrete</h3>
         <img src="img/ingredientes/vinagrete.png" alt="complemento">
-        <input type="checkbox" >
+        
+       
       </div>
       <div class="comp">
+        <input type="checkbox" >
         <h3>Tofu</h3>
         <img src="img/ingredientes/tofu.png" alt="complemento">
-        <input type="checkbox" id="compl">
       </div>
-  
     </section>
     <h2>Salsichas</h2>
     <section class="sicha">
-      
+
     <div class="salsi">
+      <input type="checkbox" >
       <h3>Salsicha Tradicional</h3>
       <img src="img/ingredientes/sasicha3.png" alt="salsicha">
-      <input type="checkbox" >
-      <div data-app="product.quantity" id="quantidade">
-        <span id="span_erro_carrinho" class="blocoAlerta" style="display:none;">Selecione uma opção para variação do produto</span>
-             
-       
-      </div>
-    </div>
-    <div class="salsi">
-      <h3>Salsicha de frango</h3>
-      <img src="img/ingredientes/sasicha2.png" alt="salsicha">
-      <input type="checkbox" >
-
-    </div>
-    <div class="salsi">
-      <h3>Salsicha Tradicional</h3>
-      <img src="img/ingredientes/sasicha1.png" alt="salsicha">
-      <input type="checkbox" >
-    </div>
-  </section>
-  <label>Quantidade:</label>      
+      <label>Quantidade:</label>     
+      <div  >
         <input type="button" id="plus" value='-' onclick="process(-1)" />
         <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
         <input type="button" id="minus" value='+' onclick="process(1)">
         <script src="scriptcad.js"></script>
+      </div> 
+      </div>
+    </div>
+    <div class="salsi">
+      <input type="checkbox" class="check" >
+      <h3>Salsicha de frango</h3>
+      <img src="img/ingredientes/sasicha2.png" alt="salsicha">
+      <label  class="quan" >Quantidade:</label> 
+      <div class="cont" >     
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
+      </div>
+    </div>
+    <div class="salsi">
+      <input type="checkbox"  >
+      <h3>Salsicha Tradicional</h3>
+      <img src="img/ingredientes/sasicha1.png" alt="salsicha">
+      <label>Quantidade:</label>    
+      <div  >  
+        <input type="button" id="plus" value='-' onclick="process(-1)" />
+        <input id="quant" name="quant" class="text" size="1" type="text" value="1" maxlength="5" />
+        <input type="button" id="minus" value='+' onclick="process(1)">
+        <script src="scriptcad.js"></script>
+      </div>
+    </div>
+  </section>
     <div >
         <button class="button"  ><a href="index.html"><strong>finalizar pedido</strong></a></button>
         <div class="drip-1"></div>
