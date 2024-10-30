@@ -1,3 +1,4 @@
+/* inicio das configuraçoes do grid */
 body{
     display: grid;
     grid-template-areas:
@@ -6,8 +7,6 @@ body{
     "rodape rodape rodape";
     grid-template-columns: 1fr 2fr 1fr;
     grid-row: auto auto auto;
-  
-
 }
 @media only screen and (max-device-width: 400px) {
     .menu { width:100%; }
@@ -23,22 +22,25 @@ body{
         display: none;
     }
 }
+/* fimdas configuraçoes do grid  */
 
+/* inicio das configuraçoes do cabeçalho  */
 header{
     grid-area: cabeca;
     background-color: rgba(248, 162, 49, 0.966);
     height: 100px;
 
-    }
+}
 
-    header img{
-        height: 200px;
-       position: relative;
-       left: 800px;
-       bottom: 60px;
+ header img{
+    height: 200px;
+    position: relative;
+    left: 800px;
+    bottom: 60px;
+}
+/* fim das configuraçoes do cabeçalho  */
 
-    }
-
+/* inicio das configuraçoes do corpo  */
 main{
     grid-area: corpo;
     background-color:  #ffe5b5;
@@ -47,8 +49,7 @@ main{
     align-items: center;
 
  }
-
-
+ 
  main h1{
     color: rgb(32, 30, 30);
    border-style: dashed;
@@ -190,6 +191,7 @@ div img{
     
 }
 /* fim sections */
+
 /* inicio divs */
 .checkbox{
    margin: 2px;
@@ -294,7 +296,9 @@ div img{
   bottom: 10px;
 }
 /* fim configurações */
+/* fim das configuraçoes do corpo */
 
+/* inicio das configuraçoes do reodape  */
 footer{
         grid-area: rodape;
         background-color:rgba(252, 161, 44, 0.966);
@@ -309,6 +313,7 @@ footer{
         
  }
 
+/*  configuraçoes imagens do rodape  */
  .ifood{
     width: 100px;
     height: auto;
@@ -329,7 +334,7 @@ footer a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
-
 }
+/* fim das configuraçoes do reodape  */
+
 
