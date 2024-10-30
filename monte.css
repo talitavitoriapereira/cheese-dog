@@ -48,6 +48,10 @@ main{
     height: 1000px;
     align-items: center;
 
+    background: url("img/fundotijolinho") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
  }
  
  main h1{
