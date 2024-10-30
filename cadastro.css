@@ -28,6 +28,7 @@ body{
     padding: x;
     display: inline;
     position: relative;
+    bottom: 12px;
     flex-direction: row;
     background-color: #f7c262;
     box-shadow: 3px 1px 3px #a571029c;
@@ -63,11 +64,13 @@ body{
     justify-content: center;
     position: relative;
     left: 30px;  
+    bottom: 5px;
   }
 
   .menu{
     position: absolute;
     bottom: 0;
+    height: 30px;
     width: 100%;
     background-color: #ffe5b5;
 }
@@ -272,7 +275,7 @@ td{
 }
 
 .button:hover ~ .drip-2{
-  height: 50px;
+  height: 40px;
 }
 
 .button:hover ~ .drip-3{
@@ -283,7 +286,7 @@ td{
 
 .drip-1{
   position:absolute;
-  left: 1009px;
+  left: 580px;
   width:3px;
   height:1px;
   border-radius:0 0 21px 21px;
@@ -295,8 +298,8 @@ td{
 
 .drip-2{
   position:absolute;
-  left: 800px;
-  width:2px;
+  left: 590px;
+  width:3px;
   height:0px;
   border-radius:0 0 21px 21px;
   background:#fcf80b;
@@ -306,7 +309,7 @@ td{
 
 .drip-3{
   position:absolute;
-  left: 1010px;
+  left: 320px;
   width:7px;
   height:0px;
   border-radius:0 0 21px 21px;

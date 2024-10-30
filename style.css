@@ -59,6 +59,7 @@ header{
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 30px;
     background-color: #ffe5b5;
 }
 
@@ -68,6 +69,7 @@ header li {
     padding: x;
     display: inline;
     position: relative;
+    bottom: 12px;
     flex-direction: row;
     background-color: #f7c262;
     box-shadow: 3px 1px 3px #a571029c;

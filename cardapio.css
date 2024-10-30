@@ -45,6 +45,7 @@ header{
 .menu{
     position: absolute;
     bottom: 0;
+    height: 30px;
     width: 100%;
     background-color: #ffe5b5;
 }
@@ -55,6 +56,7 @@ header li {
     padding: x;
     display: inline;
     position: relative;
+    bottom: 11px;
     flex-direction: row;
     background-color: #f7c262;
     box-shadow: 3px 1px 3px #a571029c;
