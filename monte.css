@@ -172,22 +172,33 @@ div img{
 }
 /*  inicio sections */
 .comple {
-   display:flex;
-    margin: 3px;
-    background-color: rgb(252, 194, 87);
+  align-items: center;
+  justify-content: center;
+  padding:2%;
+  display:flex;
+  margin: 3px;
+  background-color: rgb(117, 172, 255);
+  border-radius: 15px;
 }
 
 .cheese{
-
+  align-items: center;
+  justify-content: center;
+  padding:2%;
+  border-radius: 15px;
     display: flex;
     margin: 3px;
-    background-color: rgb(252, 194, 87);
+    background-color: rgb(117, 172, 255);
 }
 
 .bread{
+  align-items: center;
+  justify-content: center;
+   padding:2%;
+    border-radius: 15px;
     display: flex;
     margin: 3px;
-    background-color: rgb(252, 194, 87);
+    background-color: rgb(117, 172, 255);
     
 }
 
