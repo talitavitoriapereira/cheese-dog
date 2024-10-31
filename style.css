@@ -122,6 +122,7 @@ main h1{
 .carrossel {
     position: relative;
     max-width: 600px;
+    max-height: auto;
     margin: auto;
     overflow: hidden;
     border: solid 25px  rgba(250, 249, 244, 0.767);
@@ -162,6 +163,73 @@ img {
     right: 10px;
 }
 /* fim carrossel */
+
+/* configuraloes cards dos hot dogs salgados  */
+.sal{
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    background-color:  #ffe5b5;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+
+}
+/*fim  configuraloes cards dos hot dogs salgados  */
+
+.doce{
+    
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin:10px;
+    background-color: #ffe5b5;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(17, 68, 92);
+    position: relative;
+    left: 0.5%;
+}
+/* fim configuraloes cards dos hot dogs doces */
+
+/* configuraçoes das imagens dos cards */
+div img{
+    width: 100px;
+}
+
+/* configuraloes cards dos hot dogs salgados  */
+
+main a{
+    background-color: rgba(248, 162, 49, 0.966);
+    color: rgb(53, 53, 104);
+    text-decoration: none;
+}
+
+.section{
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(241, 137, 0, 0.356);
+}
 /* fim configuraçoes do corpo */
 
 /* inicio configuraçoes do rodape */
