@@ -16,7 +16,7 @@ body{
     "principal"
     "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 200px auto auto;
+    grid-template-rows: auto;
      }
     .logo{
         display: none;
@@ -267,8 +267,14 @@ footer{
     text-align: center;
     padding: 2px;
     margin: 2px;
+    max-height: 300px;
 
 }
+
+.app{
+    position: relative;
+    bottom: 150px;
+    }
 /* configuraçoes das imagens */
 .ifood{
     width: 100px;

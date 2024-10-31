@@ -3,14 +3,14 @@
 body{
     display: grid;
     grid-template-areas:
-    "cabeca cabeca cabeca "
-    "corpo corpo corpo "
-    "rodape rodape rodape";
-    grid-template-columns: 1fr 1fr 1fr;
+    "cabeca  "
+    "corpo "
+    "rodape ";
+    grid-template-columns: auto;
     grid-row: auto auto auto;
 }
 
- @media only screen and (max-device-width: 400px) {
+ @media only screen and (max-device-width: 768px) {
      .menu { width:100%; }
     body{
      grid-template-areas: 
@@ -23,6 +23,8 @@ body{
      .logo{
          display: flex;
      }
+    
+    
  }
 /* fim das configuraçoes do grid */
 
@@ -142,7 +144,7 @@ main h1{
     box-sizing: border-box;
 }
 
-img {
+ .slides img {
     width: 100%;
     display: block;
    
@@ -245,17 +247,15 @@ footer{
     text-align: center;
     padding: 2px;
     margin: 2px;
-    
-    /* position: relative;
-    width: 100%;
-    bottom: 0; */
+    position: relative;
+    height: auto;
+    max-height: 300px;
 }
-footer a{
-    display: flex;
-    margin: 9px;
-    flex-direction: column;
-    align-items: center;
-}
+
+.app{
+    position: relative;
+    bottom: 150px;
+    }
 
 /* configuraçoes imagens do rodape */
 .ifood{

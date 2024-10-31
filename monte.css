@@ -187,6 +187,7 @@ main{
 /* inicio alterações div */
 div img{
     width: 100px;
+    
 }
 /*  inicio sections */
 .comple {
@@ -194,9 +195,12 @@ div img{
   justify-content: center;
   padding:2%;
   display:flex;
-  margin: 3px;
-  background-color: rgb(117, 172, 255);
+  margin: 1px;
+  background-color:  rgb(252, 194, 87);
   border-radius: 15px;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(17, 68, 92);
 }
 
 .cheese{
@@ -205,8 +209,11 @@ div img{
   padding:2%;
   border-radius: 15px;
     display: flex;
-    margin: 3px;
-    background-color: rgb(117, 172, 255);
+    margin: 1px;
+    background-color:  rgb(252, 194, 87);
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(17, 68, 92);
 }
 
 .bread{
@@ -215,8 +222,11 @@ div img{
    padding:2%;
     border-radius: 15px;
     display: flex;
-    margin: 3px;
-    background-color: rgb(117, 172, 255);
+    margin: 1px;
+    background-color:  rgb(252, 194, 87);
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(17, 68, 92);
     
 }
 
@@ -224,11 +234,13 @@ div img{
   display: flex;
   margin-bottom: 10px;
   background-color: rgb(252, 194, 87);
+  margin: 1px;
   padding: 20px;
   align-items: center;
- 
   flex-direction: row;
-    
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(17, 68, 92)   
 }
 /* fim sections */
 
@@ -286,7 +298,7 @@ div img{
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 15px;
+    margin: 5px;
     justify-content: center;
     transition: 1s;
     box-shadow: 0px 5px 10px rgba(90, 52, 9, 0.514);
@@ -315,7 +327,7 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 10%;
+    left: 20%;
     bottom: 30px;
     background-color: beige;
 
@@ -325,10 +337,11 @@ div img{
   position: relative;
   top: 8px;
 }
+
 .cont{
   display: flex;
   position: relative;
-  left: 200px;
+  left: 250px;
   background-color: #ffe5b5;
   border-radius: 10px;
   height: 30px;
@@ -337,29 +350,25 @@ div img{
 .quan{
   position: relative;
   bottom: 30px;
-  left: 270px;
+  left: 320px;
 }
 
-.quan2{
-  position: relative;
- top: 50px;
-  left: 100px;
-}
+
 /* fim configurações */
 /* fim das configuraçoes do corpo */
 
 /* inicio das configuraçoes do reodape  */
 footer{
-        grid-area: rodape;
-        background-color:rgba(252, 161, 44, 0.966);
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        padding: 2px;
-        margin: 2px;
-        height: auto;
-
+    grid-area: rodape;
+    background-color:rgba(252, 161, 44, 0.966);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    height: auto;
+    max-height: 300px;
         
  }
 
@@ -379,12 +388,10 @@ footer{
     height: auto;
 }
 
-footer a{
-    margin: 9px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+.app{
+  position: relative;
+  bottom: 150px;
+  }
 
 .chat{
   display: flex;

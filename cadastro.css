@@ -389,14 +389,13 @@ footer{
   text-align: center;
   padding: 2px;
   margin: 2px;
+  max-height: 300px;
 }
 
-footer a{
-  display: flex;
-  margin: 9px;
-  flex-direction: column;
-  align-items: center;
-}
+.app{
+  position: relative;
+  bottom: 150px;
+  }
 
 
 
