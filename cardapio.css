@@ -35,7 +35,7 @@ header{
 /* configuraçao da logo */
 .logo{
     width: 300px;
-    height: 230px;
+    height: auto;
     text-align: center;
     justify-content: center;
     position: relative;
@@ -98,7 +98,7 @@ h1 {
     /* margin-right: 40px ; */
     background-color:rgba(247, 140, 0, 0.445) ;
 }
-h2{
+ main h2{
     border-style: dotted;
     border-width: 4px;
     border-color: rgb(148, 5, 5);
@@ -283,5 +283,18 @@ footer{
 .rappi{
     width: 100px;
     height: auto;
+}
+
+.chat{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0c169;
+    width: 190px;
+
+}
+.ch{
+    position: relative;
+    right: 560px;
+    top: 20px;
 }
 /* fim das cofiguracoes do rodape*/

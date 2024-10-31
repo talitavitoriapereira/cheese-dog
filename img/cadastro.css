@@ -8,7 +8,7 @@ body{
   
 
 @media only screen and (max-device-width: 400px) {
-  .menu { width:100%; } 
+  .menu { width:100%; }
  body{
   grid-template-areas: 
   "cabeca"
@@ -51,8 +51,7 @@ body{
     align-items: center;
     text-align: center;
     margin: 10px;
-  } */ 
-   
+  } */
   header{
     grid-area: cabeca;
     background-color:rgba(248, 162, 49, 0.966);

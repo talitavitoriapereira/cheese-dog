@@ -44,16 +44,19 @@ header{
     text-align: center;
     position: relative;
 }
+
 /* cofiguraçoes da logo */
 .logo{
-    width: 190px;
+    width: 300px;
     text-align: center;  
 }
+
 .logodiv{
     display: flex;
     justify-content: center;
     align-items: center; 
 }
+
 /* configuraçao do menu */
 .menu{
     position: absolute;
@@ -268,6 +271,19 @@ footer a{
 .rappi{
     width: 95px;
     height: auto;
+}
+
+.chat{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0c169;
+    width: 190px;
+
+}
+.ch{
+    position: relative;
+    right: 560px;
+    top: 20px;
 }
 /* fim configuraçoes do rodape */
 
