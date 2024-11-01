@@ -106,6 +106,7 @@ body{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    margin-top: 5px;
   }
 
   main h1{
@@ -113,6 +114,16 @@ body{
     color: rgb(1, 2, 2);
     font-size: xx-large;
     background-color: #f7c262;
+    background-color: rgba(248, 162, 49, 0.966);
+    color: rgb(53, 53, 104);
+    text-decoration: none;
+    background-color:rgba(4, 47, 83, 0.801);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
 
   }
 
@@ -133,8 +144,9 @@ body{
   div a{
     text-decoration: none;
     color: #0a6f88;
-    background-color: #ffe44e;
+    background-color: #ffe44e00;
     border-radius: 4px;
+    
   }
 
   div button{
@@ -371,7 +383,7 @@ td{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(241, 137, 0, 0.356);
+  background-color: rgba(241, 137, 0, 0);
 }
 
 .carr{

@@ -13,7 +13,7 @@ body{
    body{
     grid-template-areas: 
     "cabeca"
-    "principal"
+    "corpo"
     "rodape";
     grid-template-columns: auto;
     grid-template-rows: 200px  auto;
@@ -80,6 +80,7 @@ main{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    margin-top: 5px;
  }
 
  main a {

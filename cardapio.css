@@ -13,7 +13,7 @@ body{
    body{
     grid-template-areas: 
     "cabeca"
-    "principal"
+    "corpo"
     "rodape";
     grid-template-columns: auto;
     grid-template-rows: auto;
