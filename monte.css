@@ -24,6 +24,7 @@ body{
 }
 /* fimdas configuraçoes do grid  */
 
+
 /* inicio das configuraçoes do cabeçalho  */
 header{
     grid-area: cabeca;
@@ -58,6 +59,7 @@ header nav{
 
 header a{
   text-decoration: none;
+  color: #0e0808;
 }
 
  header img{
@@ -79,6 +81,16 @@ main{
     -moz-background-size: cover;
     background-size: cover;
  }
+
+ main a {
+    background-color:rgba(4, 47, 83, 0.801);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+  
+ }
  
  main h1{
    color: rgb(32, 30, 30);
@@ -87,7 +99,21 @@ main{
    position: relative;
    left: 20%;
 
-   /* background-color: rgb(209, 169, 109); */
+   text-align: center;
+   text-align: center;
+   background-color:  rgba(4, 47, 83, 0.801);
+   /* border-style: dotted;
+   border-width: 4px;
+   border-color: #f7cd7e; */
+   padding: 5px;
+   width: 300px;
+   text-align: center;
+   align-items: center;
+   justify-items: center;
+   position: relative;
+   left: 41%;
+   color: #ffe5b5;
+   border-radius: 10px;
    
  }
 
@@ -397,7 +423,7 @@ footer{
   display: flex;
   flex-direction: row;
   background-color: #f0c169;
-  width: 190px;
+  width: 230px;
 
 }
 .ch{
