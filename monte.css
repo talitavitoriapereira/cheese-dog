@@ -163,7 +163,7 @@ main{
 
 .drip-1{
   position:absolute;
-  left: 580px;
+  left: 860px;
   width:5px;
   height:1px;
   border-radius:0 0 21px 21px;
@@ -175,7 +175,7 @@ main{
 
 .drip-2{
   position:absolute;
-  left: 590px;
+  left: 650px;
   width:4px;
   height:0px;
   border-radius:0 0 21px 21px;
@@ -186,7 +186,7 @@ main{
 
 .drip-3{
   position:absolute;
-  left: 320px;
+  left: 590px;
   width:7px;
   height:0px;
   border-radius:0 0 21px 21px;
@@ -218,6 +218,7 @@ div img{
 }
 /*  inicio sections */
 .comple {
+  height: 100px;
   align-items: center;
   justify-content: center;
   padding:2%;
@@ -231,19 +232,21 @@ div img{
 }
 
 .cheese{
+  height: 100px;
   align-items: center;
   justify-content: center;
   padding:2%;
   border-radius: 15px;
-    display: flex;
-    margin: 1px;
-    background-color:  rgb(252, 194, 87);
-    border-style: double;
-    border-width: 5px;
-    border-color: rgb(17, 68, 92);
+  display: flex;
+  margin: 1px;
+  background-color:  rgb(252, 194, 87);
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(17, 68, 92);
 }
 
 .bread{
+  height: 100px;
   align-items: center;
   justify-content: center;
    padding:2%;
@@ -258,6 +261,7 @@ div img{
 }
 
 .sicha{
+  height: 150px;
   display: flex;
   margin-bottom: 10px;
   background-color: rgb(252, 194, 87);
@@ -297,7 +301,7 @@ div img{
 }
 
 .Queijo{
-  width: 200px;
+  width: 190px;
   flex-direction: row;
   border-radius: 10px;
   display: flex;
@@ -339,7 +343,7 @@ div img{
 
 .salsi{
     width: 200px;
-    height: 180px;
+    height: 145px;
     border-radius: 10px;
     text-align: center;
     align-items: center;
@@ -354,8 +358,8 @@ div img{
     border-width: 10px;
     border-color: rgb(17, 68, 92);
     position: relative;
-    left: 20%;
-    bottom: 30px;
+    left: 25%;
+    bottom: 9px;
     background-color: beige;
 
 }
@@ -368,7 +372,7 @@ div img{
 .cont{
   display: flex;
   position: relative;
-  left: 250px;
+  left: 830px;
   background-color: #ffe5b5;
   border-radius: 10px;
   height: 30px;
@@ -377,7 +381,7 @@ div img{
 .quan{
   position: relative;
   bottom: 30px;
-  left: 320px;
+  left: 900px;
 }
 
 
